@@ -83,7 +83,7 @@ function buildRow (id, guide) {
   const editButton = $('<button/>', { class: 'btn btn-success' });
   const deleteButton = $('<button/>', { class: 'btn btn-danger'});
 
-  const fields = row.children('td').slice(1, 4);
+  const fields = row.children('td').slice(1, 5);
   editButton.click(function () { edit($(this), id, fields); });
   deleteButton.click(function () { del(row); });
 
